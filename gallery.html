@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Bhanu Ads</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="brand-text">BHANU<span class="brand-accent">ADS</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="services.html#digital">Digital Screens</a></li>
+                        <li><a class="dropdown-item" href="services.html#mobile">Mobile Vans</a></li>
+                        <li><a class="dropdown-item" href="services.html#bus">Bus Shelters</a></li>
+                        <li><a class="dropdown-item" href="services.html#median">Central Medians</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <button class="btn btn-quote ms-lg-2" data-bs-toggle="modal" data-bs-target="#quoteModal">Get Quote</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <p class="hero-tag">Our Work</p>
+        <h1>Campaign Gallery</h1>
+        <p class="mt-3">A showcase of our advertising placements across the city</p>
+    </div>
+</section>
+
+<!-- FILTER BUTTONS -->
+<section class="py-4" style="background:white;border-bottom:1px solid #f0f0f0;">
+    <div class="container">
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <button class="filter-btn active" data-filter="all">All Work</button>
+            <button class="filter-btn" data-filter="digital">Digital Screens</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Vans</button>
+            <button class="filter-btn" data-filter="bus">Bus Shelters</button>
+            <button class="filter-btn" data-filter="median">Central Medians</button>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY GRID -->
+<section class="py-5" style="background:#f9f6f1;">
+    <div class="container">
+        <div class="d-flex flex-wrap gap-3" id="galleryGrid">
+
+            <div class="gallery-box" data-category="digital">
+                <img src="images\img1.jpeg" alt="Digital Screens" onerror="this.src='https://placehold.co/400x220/E8340A/white?text=Digital+Screens'">
+                <div class="overlay">
+                    <div class="overlay-label">Digital Screen 1<span>MG ROAD POLICE PETROL BUNK</span></div>
+                </div>
+            </div>
+
+            <div class="gallery-box" data-category="mobile">
+                <img src="images\img4.jpeg" alt="Mobile Vans" onerror="this.src='https://placehold.co/400x220/1a3a4a/white?text=Mobile+Vans'">
+                <div class="overlay">
+                    <div class="overlay-label">Mobile Van<span>City-wide Event Campaign</span></div>
+                </div>
+            </div>
+
+            <div class="gallery-box" data-category="bus">
+                <img src="images\img9.jpeg" alt="Bus Shelters" onerror="this.src='https://placehold.co/400x220/1a4a2a/white?text=Bus+Shelters'">
+                <div class="overlay">
+                    <div class="overlay-label">Bus Shelters <span>PORANKI</span></div>
+                </div>
+            </div>
+
+            <div class="gallery-box" data-category="median">
+                <img src="images\img6.jpeg" alt="Central Medians" onerror="this.src='https://placehold.co/400x220/4a3a1a/white?text=Central+Medians'">
+                <div class="overlay">
+                    <div class="overlay-label">Central Medians 1 <span>MG Road</span></div>
+                </div>
+            </div>
+
+            <div class="gallery-box" data-category="median">
+                <img src="images\img15.jpeg" alt="Central Medians 2" onerror="this.src='https://placehold.co/400x220/4a3a1a/white?text=Central+Medians+2'">
+                <div class="overlay">
+                    <div class="overlay-label">Central Medians 2<span>Benz Circle</span></div>
+                </div>
+            </div>
+
+            <div class="gallery-box" data-category="digital">
+                <img src="images\img10.jpeg" alt="Digital Screens 2" onerror="this.src='https://placehold.co/400x220/E8340A/white?text=Digital+Screens+2'">
+                <div class="overlay">
+                    <div class="overlay-label">Digital Screen 2 <span>MG ROAD SUB COLLECTOR PETROL BUNK</span></div>
+                </div>
+            </div>
+
+            <div class="gallery-box" data-category="digital">
+                <img src="images\img2.jpeg" alt="Digital Screens 3" onerror="this.src='https://placehold.co/400x220/E8340A/white?text=Digital+Screens+3'">
+                <div class="overlay">
+                    <div class="overlay-label">Digital Screen 3<span>E3 FOOD COURT</span></div>
+                </div>
+            </div>
+
+            <div class="gallery-box" data-category="digital">
+                <img src="images\img7.jpeg" alt="Mobile Vans 2" onerror="this.src='https://placehold.co/400x220/1a3a4a/white?text=Mobile+Vans+2'">
+                <div class="overlay">
+                    <div class="overlay-label">Digital Screen 4 <span>PORANKI</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- LIGHTBOX (opens when gallery image is clicked) -->
+<div id="lightbox">
+    <button class="lb-close" id="lbClose">✕</button>
+    <img id="lbImg" src="" alt="Gallery Image">
+    <div class="lb-caption" id="lbCaption"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="footer-brand">BHANU<span class="brand-accent">ADS</span></div>
+                <p class="mt-3 footer-desc">Transforming spaces into powerful brand communication platforms across Andhra Pradesh.</p>
+            </div>
+            <div class="col-md-2">
+                <h6 class="footer-heading">Pages</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Services</h6>
+                <ul class="footer-links">
+                    <li><a href="services.html#digital">Digital Screens</a></li>
+                    <li><a href="services.html#mobile">Mobile Vans</a></li>
+                    <li><a href="services.html#bus">Bus Shelters</a></li>
+                    <li><a href="services.html#median">Central Medians</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Contact</h6>
+                <ul class="footer-links">
+                    <li>📍 Kalpana Nagar, Kanuru,<br>Vijayawada - 520007</li>
+                    <li>📞 <a href="tel:+919849596457">+91 9849596457</a></li>
+                    <li>✉️ <a href="mailto:bhanuads2021@gmail.com">bhanuads2021@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-hr mt-4">
+        <p class="text-center footer-copy mb-0">© 2025 Bhanu Ads. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- QUOTE MODAL -->
+<div class="modal fade" id="quoteModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content quote-modal">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Get a Free Quote</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" class="form-control custom-input" id="quoteName" placeholder="Your full name">
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="tel" class="form-control custom-input" id="quotePhone" placeholder="+91 XXXXX XXXXX">
+                        <div class="invalid-feedback">Please enter a valid phone number.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-control custom-input" id="quoteEmail" placeholder="you@example.com">
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Media Type</label>
+                        <select class="form-select custom-input" id="quoteMedia">
+                            <option value="">Select a media type</option>
+                            <option>Digital Screens</option>
+                            <option>Mobile Vans</option>
+                            <option>Bus Shelters</option>
+                            <option>Central Medians</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Campaign Details</label>
+                        <textarea class="form-control custom-input" id="quoteDetails" rows="3" placeholder="Tell us about your campaign..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-quote" id="submitQuote">Submit Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SUCCESS TOAST -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999;">
+    <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">✅ Quote request submitted! We'll contact you soon.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+    // Gallery filter buttons
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    var galleryItems = document.querySelectorAll('.gallery-box');
+
+    filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var filter = btn.getAttribute('data-filter');
+
+            galleryItems.forEach(function(item) {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.opacity = '1';
+                    item.style.transform = 'scale(1)';
+                    item.style.pointerEvents = 'auto';
+                } else {
+                    item.style.opacity = '0.15';
+                    item.style.transform = 'scale(0.93)';
+                    item.style.pointerEvents = 'none';
+                }
+                item.style.transition = 'all 0.3s ease';
+            });
+        });
+    });
+
+    // Lightbox - click image to see it bigger
+    var lightbox = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lbImg');
+    var lbCaption = document.getElementById('lbCaption');
+
+    galleryItems.forEach(function(box) {
+        box.addEventListener('click', function() {
+            var img = box.querySelector('img');
+            var label = box.querySelector('.overlay-label');
+            lbImg.src = img.src;
+            lbCaption.textContent = label ? label.textContent.trim() : '';
+            lightbox.classList.add('open');
+        });
+    });
+
+    document.getElementById('lbClose').addEventListener('click', function() {
+        lightbox.classList.remove('open');
+    });
+
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('open');
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            lightbox.classList.remove('open');
+        }
+    });
+</script>
+</body>
+</html>
